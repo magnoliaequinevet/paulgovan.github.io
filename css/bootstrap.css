@@ -84,7 +84,7 @@ sub {
   bottom: -.25em;
 }
 img {
-  border-radius: 50%;
+  border: 0;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -940,7 +940,7 @@ img {
   height: auto;
 }
 .img-rounded {
-  border-radius: 6px;
+  border-radius: 50%;
 }
 .img-thumbnail {
   display: inline-block;
