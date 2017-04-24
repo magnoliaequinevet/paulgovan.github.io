@@ -3,7 +3,7 @@
 # ----------------------- #
 
 url: http://www.magnoliaequinevet.com
-title: Magnolia Equine Vet Services
+title: MEVS
 email: magnoliaequinevet@gmail.com
 author: Kendrick Govan, DVM, DACT
 description: > # "Write an awesome description for your new site here. 
@@ -26,4 +26,4 @@ permalink: pretty
 
 social:
   - title: Get in Touch
-    url: https://paulgovan.github.io/#contact
+    url: https://magnoliaequinevet.com/#contact
