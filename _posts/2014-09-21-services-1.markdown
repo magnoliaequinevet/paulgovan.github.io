@@ -6,4 +6,5 @@ title: Services
 description: |
 ---
 * Reproduction
-* Equine Dentistry & Wellness
+* Equine Dentistry
+* Wellness Services
