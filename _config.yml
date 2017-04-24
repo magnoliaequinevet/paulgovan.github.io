@@ -24,6 +24,6 @@ permalink: pretty
 #   3rd Party Settings    #
 # ----------------------- #
 
-# social:
-  # - title: linkedin
-  #   url: 
+social:
+  - title: Get in touch
+    url: https://paulgovan.github.io/#contact
