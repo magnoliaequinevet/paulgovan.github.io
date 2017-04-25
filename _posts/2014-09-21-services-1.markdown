@@ -5,7 +5,7 @@ category: Services
 title: Services
 description: |
 ---
-Magnolia Equine provides a variety of specialized, onsite veterinary services, including:
+Magnolia Equine provides a number of specialized, onsite veterinary services, including:
 * Reproduction
 * Equine Dentistry
 * Wellness Services
