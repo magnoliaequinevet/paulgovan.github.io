@@ -6,11 +6,10 @@
 		<a class="skip-link" href="#main">Skip to content</a>
 		{% include header.html %}
 		<main id="main">
-			{% include about.html %}
-			{% include page_content.html %}
-			{% include contact.html %}
+			{{ content }}
 		</main>
 		{% include footer.html %}
+		{% include call-bar.html %}
 		{% include js.html %}
 	</body>
 </html>

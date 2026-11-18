@@ -1,0 +1,12 @@
+<!-- Hero -->
+<header id="home" class="hero">
+    <div class="container">
+        <h1>{{ page.title | default: site.title }}</h1>
+        <p class="hero-subtitle">{{ page.subTitle }}</p>
+        <hr class="hero-divider">
+        <p class="button-row">
+            <a href="tel:{{ site.contact.phone_e164 }}" class="btn btn-primary btn-lg">Call {{ site.contact.phone_display }}</a>
+            <a href="mailto:{{ site.contact.email }}" class="btn btn-secondary btn-lg">Email Us</a>
+        </p>
+    </div>
+</header>
