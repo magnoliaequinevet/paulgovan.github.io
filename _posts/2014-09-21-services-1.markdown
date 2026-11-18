@@ -1,8 +1,12 @@
 ---
 layout: default
 img: Kinny.jpg
+img_alt: Dr. Kendrick Govan with a horse
+img_width: 800
+img_height: 773
 category: Services
 title: Services
+sitemap: false
 description: |
 ---
 Magnolia Equine provides specialized, onsite veterinary services, including:

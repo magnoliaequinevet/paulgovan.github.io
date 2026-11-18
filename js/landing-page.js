@@ -1,31 +1,20 @@
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
+// Mobile navigation toggle (replaces jQuery + Bootstrap JS).
+(function () {
+    var toggle = document.querySelector('.navbar-toggle');
+    var menu = document.getElementById('main-nav');
+    if (!toggle || !menu) return;
+
+    function setOpen(open) {
+        menu.classList.toggle('in', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    toggle.addEventListener('click', function () {
+        setOpen(!menu.classList.contains('in'));
     });
-});
 
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top'
-})
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
-});
-
-$('div.modal').on('show.bs.modal', function() {
-	var modal = this;
-	var hash = modal.id;
-	window.location.hash = hash;
-	window.onhashchange = function() {
-		if (!location.hash){
-			$(modal).modal('hide');
-		}
-	}
-});
+    // Close the menu after choosing a link on small screens.
+    menu.addEventListener('click', function (event) {
+        if (event.target.closest('a')) setOpen(false);
+    });
+})();
