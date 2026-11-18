@@ -29,7 +29,7 @@ Then open http://localhost:4000.
 
 ## Hosting, domain and HTTPS
 
-- GitHub Pages builds the site from `master` on every push.
+- GitHub Pages builds the live site from the **`gh-pages`** branch. Work on `master`, then merge `master` into `gh-pages` and push to publish.
 - `CNAME` must contain exactly one domain: `magnoliaequinevet.com`. GitHub redirects `www` to it automatically.
 - DNS: apex `A` records point to GitHub Pages (`185.199.108–111.153`), and `www` is a `CNAME` to `magnoliaequinevet.github.io`.
 - HTTPS: in the repo's **Settings → Pages**, confirm the custom domain shows as verified, then tick **Enforce HTTPS**. Certificate issuance can take up to 24 hours after the domain is saved.
