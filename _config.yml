@@ -2,12 +2,31 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://www.magnoliaequinevet.com
-title: MEVS
+url: https://magnoliaequinevet.com
+baseurl: ""
+title: Magnolia Equine Veterinary Services
+short_title: Magnolia Equine
+tagline: Mobile equine veterinary care in Upstate South Carolina and Western North Carolina
 email: magnoliaequinevet@gmail.com
 author: Kendrick Govan, DVM, DACT
 description: 'Magnolia Equine is a mobile veterinary service specializing in onsite veterinary care for the equine community in upstate South Carolina and western North Carolina.'
-copyright: 'Copyright &copy; 2016 Magnolia Equine Veterinary Services, LLC. All Rights Reserved.'
+copyright_holder: Magnolia Equine Veterinary Services, LLC
+image: /img/services/Kinny.jpg
+lang: en
+
+# Contact details: edit here and they update everywhere on the site
+# (contact section, hero buttons and search-engine structured data).
+contact:
+  street: 12 Greer Rd
+  city: Lyman
+  region: SC
+  postal_code: "29365"
+  phone_display: 336.407.5700
+  phone_e164: "+13364075700"
+  email: magnoliaequinevet@gmail.com
+  area_served:
+    - Upstate South Carolina
+    - Western North Carolina
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -17,10 +36,12 @@ copyright: 'Copyright &copy; 2016 Magnolia Equine Veterinary Services, LLC. All 
 markdown: kramdown
 permalink: pretty
 
-# ----------------------- #
-#   3rd Party Settings    #
-# ----------------------- #
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
-social:
-  - title: Get in Touch
-    url: https://magnoliaequinevet.com/#contact
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

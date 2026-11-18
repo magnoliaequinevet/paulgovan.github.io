@@ -10,6 +10,44 @@ html {
     height: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Keep section headings clear of the fixed navbar when jumping to an anchor */
+section[id],
+header[id] {
+    scroll-margin-top: 50px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 2000;
+    padding: 10px 15px;
+    background: #fff;
+    color: #222;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+}
+
+a:focus,
+button:focus,
+.btn:focus {
+    outline: 3px solid #4a7c59;
+    outline-offset: 2px;
+}
+
 body,
 h1,
 h2,
@@ -31,7 +69,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../img/intro-bg.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -53,7 +91,9 @@ h6 {
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.intro-message > h3 {
+.intro-message > .intro-subtitle {
+    margin: 20px 0 10px;
+    font-size: 24px;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
@@ -112,7 +152,7 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(../img/intro-bg.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -126,17 +166,25 @@ h6 {
     margin-bottom: 0;
 }
 
-/*.banner-social-buttons {
-    /*float: right;*/
-    /*margin-top: 0;
-}*/
+.contact-details {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
 
-/*@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        float: left;
-        margin-top: 15px;
-    }
-}*/
+.contact-details a {
+    color: #f8f8f8;
+    text-decoration: underline;
+}
+
+#about {
+    padding: 60px 15px 40px;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
 
 @media(max-width:767px) {
     .banner h2 {
@@ -145,14 +193,8 @@ h6 {
         font-size: 3em;
     }
 
-    ul.banner-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.banner-social-buttons > li:last-child {
-        margin-bottom: 0;
+    .contact-details {
+        margin-top: 20px;
     }
 }
 

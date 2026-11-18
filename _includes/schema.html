@@ -1,0 +1,25 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VeterinaryCare",
+  "name": {{ site.title | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "url": {{ site.url | jsonify }},
+  "image": {{ site.image | absolute_url | jsonify }},
+  "telephone": {{ site.contact.phone_e164 | jsonify }},
+  "email": {{ site.contact.email | jsonify }},
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ site.contact.street | jsonify }},
+    "addressLocality": {{ site.contact.city | jsonify }},
+    "addressRegion": {{ site.contact.region | jsonify }},
+    "postalCode": {{ site.contact.postal_code | jsonify }},
+    "addressCountry": "US"
+  },
+  "areaServed": {{ site.contact.area_served | jsonify }},
+  "founder": {
+    "@type": "Person",
+    "name": {{ site.author | jsonify }}
+  }
+}
+</script>
