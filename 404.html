@@ -1,0 +1,16 @@
+---
+layout: default
+title: Page not found
+permalink: /404.html
+sitemap: false
+---
+<section class="section not-found">
+    <div class="container narrow">
+        <h1>Page not found</h1>
+        <p class="lead">Sorry, we couldn't find that page. It may have moved, or the link may be out of date.</p>
+        <p class="button-row">
+            <a class="btn btn-primary" href="{{ '/' | relative_url }}">Go to the home page</a>
+            <a class="btn btn-secondary" href="tel:{{ site.contact.phone_e164 }}">Call {{ site.contact.phone_display }}</a>
+        </p>
+    </div>
+</section>

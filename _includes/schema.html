@@ -10,7 +10,6 @@
   "email": {{ site.contact.email | jsonify }},
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": {{ site.contact.street | jsonify }},
     "addressLocality": {{ site.contact.city | jsonify }},
     "addressRegion": {{ site.contact.region | jsonify }},
     "postalCode": {{ site.contact.postal_code | jsonify }},

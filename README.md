@@ -9,8 +9,9 @@ Source for [magnoliaequinevet.com](https://magnoliaequinevet.com), a one-page [J
 | Practice name, tagline, description | `_config.yml` (`title`, `tagline`, `description`) |
 | Address, phone, email, area served | `_config.yml` → `contact:` (used by the contact section, hero buttons and search-engine data) |
 | Hero heading / subheading | `index.html` front matter |
-| Services text and photo | `_posts/2014-09-21-services-1.markdown` |
-| Styles | `css/landing-page.css` |
+| Services text and photo | `_data/services.yml` (add an entry per service) |
+| Colors and styles | `css/landing-page.css` (brand colors at the top) |
+| Link-preview image | `img/og-image.jpg` (1200×630) |
 
 The copyright year in the footer updates automatically on every build.
 

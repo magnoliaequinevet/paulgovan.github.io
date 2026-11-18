@@ -1,0 +1,13 @@
+# Each entry becomes one block in the Services section, alternating
+# text-left / text-right. `body` is Markdown.
+- title: Services
+  body: |
+    Magnolia Equine provides specialized, onsite veterinary services, including:
+
+    * Reproduction
+    * Equine Dentistry
+    * Wellness Services
+  img: /img/services/Kinny.jpg
+  img_alt: Dr. Kendrick Govan with a horse
+  img_width: 800
+  img_height: 773

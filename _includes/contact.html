@@ -1,16 +1,11 @@
+<!-- Contact -->
 <section id="contact" class="banner">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6">
-				<h2>Get in Touch</h2>
-			</div>
-			<div class="col-lg-6">
-				<address class="contact-details">
-					<p>{{ site.contact.street }} | {{ site.contact.city }}, {{ site.contact.region }} {{ site.contact.postal_code }}</p>
-					<p><a href="tel:{{ site.contact.phone_e164 }}">{{ site.contact.phone_display }}</a></p>
-					<p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
-				</address>
-			</div>
-		</div>
-	</div>
+    <div class="container split">
+        <h2>Get in Touch</h2>
+        <address class="contact-details">
+            <p>{{ site.contact.city }}, {{ site.contact.region }} {{ site.contact.postal_code }}</p>
+            <p><a href="tel:{{ site.contact.phone_e164 }}">{{ site.contact.phone_display }}</a></p>
+            <p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+        </address>
+    </div>
 </section>

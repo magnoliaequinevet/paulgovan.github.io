@@ -1,0 +1,17 @@
+<!-- Services: content lives in _data/services.yml -->
+<section id="services" class="section section-cream">
+    {% for service in site.data.services %}
+    <div class="container split{% cycle '', ' split-reverse' %}">
+        <div class="split-text">
+            <hr class="accent-rule">
+            <h2>{{ service.title }}</h2>
+            <div class="lead">{{ service.body | markdownify }}</div>
+        </div>
+        {% if service.img %}
+        <div class="split-media">
+            <img src="{{ service.img | relative_url }}" alt="{{ service.img_alt }}" width="{{ service.img_width }}" height="{{ service.img_height }}" loading="lazy">
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+</section>
